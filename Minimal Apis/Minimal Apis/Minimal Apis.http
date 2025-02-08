@@ -1,0 +1,20 @@
+﻿@MinimalApis_HostAddress = https://localhost:7186
+
+POST {{MinimalApis_HostAddress}}/todoitems
+Content-Type: application/json
+{
+  "name":"walk dog energy",
+  "isComplete":true
+}
+
+###
+GET {{MinimalApis_HostAddress}}/todoitems
+###
+GET {{MinimalApis_HostAddress}}/todoitems/1
+### 
+GET {{MinimalApis_HostAddress}}/todoitems/complete
+### 
+DELETE {{MinimalApis_HostAddress}}/todoitems/1
+### 
+PUT {{MinimalApis_HostAddress}}/todoitems/1
+
